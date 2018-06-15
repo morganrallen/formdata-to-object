@@ -7,7 +7,7 @@ function formDataToObject (formData) {
     formData = new window.FormData(formData)
   }
 
-  assert.ok(formData instanceof window.formData, 'formdata-to-object: formData should be an instance of window.FormData')
+  assert.ok(formData instanceof window.FormData, 'formdata-to-object: formData should be an instance of window.FormData')
 
   var result = {}
   var iterator = formData.entries()
